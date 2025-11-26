@@ -7,7 +7,7 @@
 --
 --  To update plugins you can run
 --    :Lazy update
---
+vim.treesitter.language.register('markdown', 'quarto')
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
@@ -231,6 +231,7 @@ require('lazy').setup({
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
       ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'norg', 'python', 'regex' },
+      -- ensure_installed = { "lua", "vim", "vimdoc", "query", "bash", "python", "javascript", "typescript", "json", "markdown", "markdown_inline" },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
