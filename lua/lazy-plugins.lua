@@ -17,6 +17,10 @@ require('lazy').setup({
   require 'custom.plugins.norg',
   require 'custom.plugins.catppuccin',
   require 'custom.plugins.markdown-plus',
+  require 'custom.plugins.quarto',
+  require 'custom.plugins.img-clip',
+  require 'custom.plugins.vim-slime',
+  require 'custom.plugins.nabla',
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
