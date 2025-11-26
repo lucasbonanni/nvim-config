@@ -14,8 +14,10 @@ require('lazy').setup({
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
   require 'kickstart.plugins.gitsigns',
   require 'custom.plugins.render-markdown',
-  -- require 'custom.plugins.orgmode',
   require 'custom.plugins.norg',
+  require 'lua.custom.plugins.catppuccin',
+  require 'lua.custom.plugins.markdown-plus',
+  require 'lua.custom.plugins.render-markdown',
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
@@ -29,7 +31,7 @@ require('lazy').setup({
   --
   -- Then, because we use the `opts` key (recommended), the configuration runs
   -- after the plugin has been loaded as `require(MODULE).setup(opts)`.
-  -- require 'kickstart.plugins.which-key',
+  require 'kickstart.plugins.which-key',
 
   -- NOTE: Plugins can specify dependencies.
   --
@@ -39,8 +41,6 @@ require('lazy').setup({
   -- Use the `dependencies` key to specify the dependencies of a particular plugin
   require 'kickstart.plugins.telescope',
   require 'kickstart.plugins.lspconfig',
-  require 'custom.plugins.catppuccin',
-
   { -- Autoformat
     'stevearc/conform.nvim',
     event = { 'BufWritePre' },
